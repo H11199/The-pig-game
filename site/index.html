@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <button class="show-model">🧧Rule book</button>
+      <div class="model hidden">
+        <button class="close-model">&times;</button>
+        <h1>Here are the rules 😄</h1>
+        <p>
+          <ul>
+            <li>Most important things you need are two humans or two hands</li>
+            <li>Click on roll dice some random number will be displayed on the dice</li>
+            <li>With every roll of your dice your current score increases</li>
+            <li>Be aware to click on hold this save your current score and switch to next player</li>
+            <li>If before clicking on hold 1 appears on dice then you loss all your current score</li>
+            <li>At the end one who crosses boundary score of 20 will be declared as a winner</li>
+            <li>All the best 👍</li>
+          </ul>
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
